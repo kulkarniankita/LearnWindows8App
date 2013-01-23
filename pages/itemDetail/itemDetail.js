@@ -26,13 +26,13 @@
             element.querySelector(".titlearea .pagetitle").textContent = item.group.title;
             element.querySelector("article .item-title").textContent = item.title;
             element.querySelector("article .item-i").src = item.hello;
-            element.querySelector("article .item-subtitle").textContent = item.preptime;
-            element.querySelector("article .item-image").src = item.backgroundImage;
-            element.querySelector("article .item-subtitle1").textContent = item.shortTitle;
-            element.querySelector("article .item-description").textContent = item.group.description;
+           // element.querySelector("article .item-subtitle").textContent = item.preptime;
+           // element.querySelector("article .item-image").src = item.backgroundImage;
+           // element.querySelector("article .item-subtitle1").textContent = item.shortTitle;
+           // element.querySelector("article .item-description").textContent = item.group.description;
            
 
-            
+            /*
                 element.querySelector("article .item-tutorial").textContent = item.tutorial.content1.p1;
                 element.querySelector("article .item-tutorial1").textContent = item.tutorial.content1.p2;
                 element.querySelector("article .item-tutorial2").textContent = item.tutorial.content1.p3;
@@ -55,7 +55,7 @@
                 element.querySelector("article .item-tutorial17").textContent = item.tutorial.content2.p7;
                 element.querySelector("article .item-tutorial18").textContent = item.tutorial.content2.p8;
               
-              
+              */
 
             // Display ingredients list
          /*   var ingredients = element.querySelector("article .item-ingredients");
@@ -72,7 +72,7 @@
 
           
             //handle click events from the pin command
-
+            /*
             document.getElementById("pin").addEventListener("click", function (e) {
 
                 var uri = new Windows.Foundation.Uri("ms-appx:///" + item.tileImage);
@@ -89,9 +89,9 @@
                 tile.requestCreateAsync();
             });
 
-           
+           */
             // Handle click events from the Reminder command
-            document.getElementById("remind").addEventListener("click", function (e) {
+           /* document.getElementById("remind").addEventListener("click", function (e) {
                 // Create a toast notifier
                 var notifier = notify.ToastNotificationManager.createToastNotifier();
 
@@ -111,7 +111,7 @@
                 var date = new Date(new Date().getTime() + 30000);
                 var stn = notify.ScheduledToastNotification(template, date);
                 notifier.addToSchedule(stn);
-            });
+            });*/
             //Register for datarequested events for sharing
             dtm.getForCurrentView().addEventListener("datarequested", this.onDataRequested);
 
