@@ -1,1 +1,0 @@
-this is a Windows 8 app. Requires Windows 8 tools such as Visual Studio Express to load the project.
