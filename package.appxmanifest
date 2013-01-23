@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="77427651-b267-434b-926b-8efb77aa884a" Version="1.0.0.0" Publisher="CN=Ankita" />
+  <Properties>
+    <DisplayName>LearnWindows8</DisplayName>
+    <PublisherDisplayName>Ankita</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <VisualElements DisplayName="Learn to code in Windows 8" Logo="images\logo copy (2).jpg" SmallLogo="images\smalllogo.png" Description="Develop Windows 8 App" ForegroundText="light" BackgroundColor="#006699" ToastCapable="true">
+        <!--<LockScreen Notification="badge" BadgeLogo="images\logo-lockscreen.png"/>-->
+        <DefaultTile ShowName="allLogos" WideLogo="images\logo wide logo.png" />
+        <SplashScreen Image="images\logo copy.jpg" />
+      </VisualElements>
+      <Extensions>
+        <Extension Category="windows.search" />
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

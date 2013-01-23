@@ -1,0 +1,470 @@
+﻿[
+    {
+        "backgroundImage": "images/basics/search.png",
+        "directions": "Mix the ground pork with the salt, sugar, pepper, cornstarch and sesame oil. Add the dried mushrooms and Chinese sausage.Divide into 18 approximately equal portions. Take one portion of the meat and slightly flatten in your hand. Place a cooked quail egg on top of the meat and cover the meat around the egg to make a small round ball. Set aside. Dough:Mix the flour and sugar in a big bowl. Pour the milk in and mix until it becomes a dough Let it sit for 5 minutes. Divide into about 18 equal portions. If you feel any lumps, work through the dough with your hands to remove them. Forming and Cooking the Buns: flour, 18 pieces of dough, 18 balls of meat filling,  parchment paper, cut into 18 square. On a floured surface, roll out a piece of dough into a circle, ideally tapered at the edges Dip one of the prepared meat fillings in flour, With the piece of dough in one hand, place the meat filling on top. ",
+        "favorite": false,
+		"hello": "data/test.html",
+        "group": {
+            "backgroundImage": "images/basics/search.png",
+            "description": "One of the key features of a Windows 8 user experience is the use of charms that slide in from the right side of the screen in response to swipes or presses of Windows logo key+C. These buttons (“charms”) provide a means for Windows 8 apps to expose commonly used features in a manner that is consistent across apps. For example, if you want to perform a search in an app, you select the Search charm and type a search term into the search pane. The UI – and the actions required to invoke that UI – are the same in every app.",
+            "groupImage": "images/basics/search.png",
+            "key": "Chinese",
+            "rank": "1",
+            "recipesCount": 6,
+            "shortTitle": "Getting Started",
+            "title": "Getting Started"
+        },
+        "key": 1000,
+        "preptime": "Win Shortcut: Win + C",
+        "rating": 4,
+        "shortTitle": "windows 8 : Search your App",
+        "tileImage": "images/basics/search.png",
+        "title": "Learn Search in Windows 8",
+        "tutorial": {
+            "main-title1": "To implement search, you code a Search contract for your app. Visual Studio will do most of the work for you by inserting a JavaScript contract into your app. You will need to tweak the JavaScript to do domain-specific searches within your app’s data. It’s easy to do, as the next few steps will demonstrate.",
+            "title1": "STEPS:",
+            "content1": {
+                "p1": "1.Right-click the pages folder in Solution Explorer and use the Add > New Folder command to add a folder named search to the pages folder.",
+                "p2": "2.Right-click the search folder and use the Add > New Item command to add a Search Target contract named search.html",
+                "p3": "<script src=/pages/search/search.js></script>",
+                "p4": "4.Open Search.js and find the searchData function. This is the part of the Search contract that is called when the user initiates a search from the Search charm. You need to modify the code in this function to perform recipe searches. To do this, find the _searchData function and replace the statement that calls indexOf on the title, subtitle and description with a search like this.",
+                "p5": "return (item.title.indexOf(queryText) >= 0 ||item.directions.indexOf(queryText) >= 0);",
+                "p6": "5.While still in Search.js, find the _itemInvoked function. This function is called when the user selects an item in the ListView that displays search results. Add the following code to the handler for the_ itemPromise.done function of _itemInvoked. ",
+                "p7": "nav.navigate(/pages/itemDetail/itemDetail.html , { item: Data.getItemReference(item.data) });",
+                "p8": "6.Open Search.html, which contains an HTML fragment that defines how search results are presented to the user. Find the DIV whose class is “item,” and inside it find the DIV whose class is “item-content.” Replace the contents of that DIV – one H3 element and two H4s — with the statements below.",
+                "p9": "<h3 class=item-titlewin-type-ellipsis data-win-bind=innerHTML: shortTitlesearch.markText></h3>",
+                "p10": "<h4 class=item-subtitle win-type-x-small win-type-ellipsis>",
+                "p11": "<span data-win-bind=textContent: preptime></span></h4>"
+            },
+            "title2": "Adding Search Suggestions ",
+            "content2": {
+                "p1": "1.Open Search.js and add the following function near the bottom of the file (after the onquerysubmitted event handler).",
+                "p2": "appModel.Search.SearchPane.getForCurrentView().onsuggestionsrequested = function (eventObject) {",
+                "p3": " var text = eventObject.queryText.toLowerCase();",
+                "p4": " terms.forEach(function(term) {",
+                "p5": "if (term.indexOf(text) == 0) {",
+                "p6": "eventObject.request.searchSuggestionCollection.appendQuerySuggestion(term); } }); };",
+                "p7": "var terms = [salt, pepper, water, egg, vinegar, flour, rice, oil];",
+                "p8": "2.Start the app again and type “pep” into the search box. Verify that pepper appears in the suggestion list underneath the search box"
+            },
+            "ingredients": [
+                "600 g Ground pork",
+                "1 tsp Salt",
+                "1 tsp sugar",
+                "1/2 tsp Ground black pepper",
+                "2 tsp Cornstarch",
+                "1 tbsp Sesame oil",
+                "1 handful Sliced dried mushrooms ",
+                "soaked and well drained",
+                "18 Quail eggs",
+                "cooked and peeled - alternately use 5 chicken eggs and cut them into quarters ",
+                "3/4 cup Sugar",
+                "4 1/2 cups Self-raising flour",
+                "1 1/2 cups Milk"
+            ]
+        }
+    },
+    {
+        "backgroundImage": "images/basics/animations.png",
+        "directions": "Mix the ground pork with the salt, sugar, pepper, cornstarch and sesame oil. Add the dried mushrooms and Chinese sausage.Divide into 18 approximately equal portions. Take one portion of the meat and slightly flatten in your hand. Place a cooked quail egg on top of the meat and cover the meat around the egg to make a small round ball. Set aside. Dough:Mix the flour and sugar in a big bowl. Pour the milk in and mix until it becomes a dough Let it sit for 5 minutes. Divide into about 18 equal portions. If you feel any lumps, work through the dough with your hands to remove them. Forming and Cooking the Buns: flour, 18 pieces of dough, 18 balls of meat filling,  parchment paper, cut into 18 square. On a floured surface, roll out a piece of dough into a circle, ideally tapered at the edges Dip one of the prepared meat fillings in flour, With the piece of dough in one hand, place the meat filling on top. ",
+        "favorite": false,
+        "group": {
+            "backgroundImage": "images/basics/animations.png",
+            "description": "",
+            "groupImage": "",
+            "key": "Chinese",
+            "rank": "2",
+            "recipesCount": 6,
+            "shortTitle": "learn animations",
+            "title": "Semantic Zoom"
+        },
+        "key": 1000,
+        "preptime": "Animate your UI",
+        "rating": 4,
+        "shortTitle": "Experience zoom-in/zoom-out",
+        "tileImage": "images/basics/animations.png",
+        "title": "Semantic Zoom",
+        "tutorial": {
+            "main-title1": "The first step in adding Semantic Zoom to Contoso Cookbook is to declare a SemanticZoom control and to expand the one ListView control currently declared in the start page to two.",
+            "title1": "STEPS:",
+            "content1": {
+                "p1": "1.Open groupedItems.html.",
+                "p2": "2.Find the SECTION element containing a ListView control at the bottom. Rewrite the SECTION element to include a SemanticZoom control and two ListView controls: one representing a zoomed-in view of the start page, and another representing a zoomed-out view.",
+                "p3": "<section aria-label=Main content role=main>",
+                "p4": "",
+                "p5": " <div id=zoom data-win-control=WinJS.UI.SemanticZoom data-win-options={ initiallyZoomedOut: false } style=height: 100%",
+                "p6": " <div id=zoomedInListView class=groupeditemslist aria-label=List of groups data-win-control=WinJS.UI.ListView data-win-options={ selectionMode: 'none' }></div> ",
+                "p7": "<div id=zoomedOutListView class=groupeditemslist aria-label=List of groups data-win-control=WinJS.UI.ListView data-win-options={ selectionMode: 'none' }></div></div></section>",
+                "p8": "3.Add the following statements to groupedItems.html after the DIV element whose class is itemtemplate.",
+                "p9": "",
+                "p10": "",
+                "p11": ""
+            },
+            "title2": "Task 2 – Modifying groupedItems.js ",
+            "content2": {
+                "p1": "1.Open groupedItems.js. 2.Replace the ready function and the updateLayout function with the ones shown here.",
+                "p2": "",
+                "p3": "",
+                "p4": "",
+                "p5": "",
+                "p6": "",
+                "p7": "",
+                "p8": ""
+            },
+            "ingredients": [
+                "600 g Ground pork",
+                "1 tsp Salt",
+                "1 tsp sugar",
+                "1/2 tsp Ground black pepper",
+                "2 tsp Cornstarch",
+                "1 tbsp Sesame oil",
+                "1 handful Sliced dried mushrooms ",
+                "soaked and well drained",
+                "18 Quail eggs",
+                "cooked and peeled - alternately use 5 chicken eggs and cut them into quarters ",
+                "3/4 cup Sugar",
+                "4 1/2 cups Self-raising flour",
+                "1 1/2 cups Milk"
+            ]
+        }
+    },
+    {
+        "backgroundImage": "images/basics/startup.png",
+        "directions": "Crumble the bread mix it with the egg add salt to it. Cover each 2 shrimps with the mix hit a pan pour the souce to the pen fry the balls in the pan. Simply mix all ingredients by hand. At first it does not appear like it will mix, but keep at it just a bit longer and you have Hoisin Sauce. Letting it rest does not appear to improve the flavour any.",
+        "favorite": false,
+        "group": {
+            "backgroundImage": "images/basics/startup.png",
+            "description": "It will teach you how to change the 1st screen of your app",
+            "groupImage": "images/basics/startup.png",
+            "key": "Chinese",
+            "rank": "3",
+            "recipesCount": 6,
+            "shortTitle": "splash screen: Change splash screen",
+            "title": "Splash Screen"
+        },
+        "key": 1001,
+        "preptime": "1st Screen of your App",
+        "rating": 3,
+        "shortTitle": "startup Page of your App",
+        "tileImage": "images/basics/startup.png",
+        "title": "Splash Screen",
+        "tutorial": {
+            "main-title1": "The first step in adding Semantic Zoom to Contoso Cookbook is to declare a SemanticZoom control and to expand the one ListView control currently declared in the start page to two.",
+            "title1": "STEPS:",
+            "content1": {
+                "p1": "1.Open the package.appxmanifest manifest file.",
+                "p2": "2.Open the Application UI tab and change the below:",
+                "p3": " <SplashScreen Image = images splashscreen.png />",
+                "p4": "The splash screen image you choose must be 620 x 300 pixels using a 1x scaling factor.",
+                "p5": " 4.In the Background Color field of the Splash Screen section, set the background color to display with your splash screen image. You can enter either the name of a color or '#' and the hex value of a color. ",
+                "p6": "",
+                "p7": "",
+                "p8": "",
+                "p9": "",
+                "p10": "",
+                "p11": ""
+            },
+            "title2": "",
+            "content2": {
+                "p1": "",
+                "p2": "",
+                "p3": "",
+                "p4": "",
+                "p5": "",
+                "p6": "",
+                "p7": "",
+                "p8": ""
+            },
+            "ingredients": [
+                "8 Shrimp",
+                "2 peices of Bread",
+                "1 Egg",
+                "Salt",
+                "4 Tablespoons Soy sauce - dark/light/usual",
+                "2 tablespoons Peanut butter - or black bean paste",
+                "1 tablespoon Honey - or molasses",
+                "2 teaspoons White vinegar",
+                "1/8 teaspoon Garlic powder",
+                "2 teaspoons Sesame seed oil",
+                "20 drops Chinese-style hot sauce",
+                "1/8 teaspoon Black pepper"
+            ]
+        }
+    },
+    {
+        "backgroundImage": "images/basics/share.png",
+        "directions": "Crumble the bread mix it with the egg add salt to it. Cover each 2 shrimps with the mix hit a pan pour the souce to the pen fry the balls in the pan. Simply mix all ingredients by hand. At first it does not appear like it will mix, but keep at it just a bit longer and you have Hoisin Sauce. Letting it rest does not appear to improve the flavour any.",
+        "favorite": false,
+        "group": {
+            "backgroundImage": "images/basics/share.png",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet tempus libero vitae feugiat. Proin justo velit, luctus ornare posuere eget, pulvinar ac nibh. Integer dapibus leo in metus volutpat blandit. Morbi facilisis laoreet magna iaculis porta. Donec quis ipsum et justo faucibus lacinia. Vivamus id sapien nec dolor venenatis hendrerit. Aenean sit amet pretium quam. ",
+            "groupImage": "images/basics/share.png",
+            "key": "Chinese",
+            "rank": "4",
+            "recipesCount": 6,
+            "shortTitle": "Change Startup Screen",
+            "title": "Splash Screen"
+        },
+        "key": 1001,
+        "preptime": [
+            "WinShortcut: Win+C",
+            "ShareAppcontentviaEmailsetc"
+        ],
+        "rating": 3,
+        "shortTitle": "Shareyourcontent",
+        "tileImage": "images/basics/share.png",
+        "title": "Share/SendEmailsaboutwhatyou'rereading",
+        "tutorial": {
+            "main-title1": "The first step in adding Semantic Zoom to Contoso Cookbook is to declare a SemanticZoom control and to expand the one ListView control currently declared in the start page to two.",
+            "title1": "STEPS:  Adding Search Support ",
+            "content1": {
+                "p1": "Now that you have seen what the sharing pane looks like when an app does not support sharing, let’s add a Share contract to Contoso Cookbook so it can share recipe data.",
+                "p2": "1.Open itemDetail.js and add the following statements near the top of the file, after the “use strict” statement.",
+                "p3": "var storage = Windows.Storage; var dtm = Windows.ApplicationModel.DataTransfer.DataTransferManager; var item;",
+                "p4": "2.Remove “var” from the first line of the ready function so that the line looks like this.",
+                "p5": " item = options && options.item ? Data.resolveItemReference(options.item) : Data.items.getAt(0); ",
+                "p6": "3.Add the following code to the bottom of the ready function.",
+                "p7": "dtm.getForCurrentView().addEventListener(datarequested, this.onDataRequested);",
+                "p8": "4.Finish up by adding the following functions after the ready function (note that you’ll need to add a comma after the closing curly brace of the ready function).",
+                "p9": "onDataRequested: function (e) { var request = e.request; request.data.properties.title = item.title;",
+                "p10": "request.data.properties.description = Recipe ingredients and directions;",
+                "p11": "var recipe = \r \n INGREDIENTS \r \n + item.ingredients.join( \r \n);recipe += ( \r \n \r \nDIRECTIONS\r\n+item.directions);request.data.setText(recipe); unload: function(){WinJS.Navigation.removeEventListener(datarequested, this.onDataRequested);}"
+            },
+            "title2": "",
+            "content2": {
+                "p1": "",
+                "p2": "",
+                "p3": "",
+                "p4": "",
+                "p5": "",
+                "p6": "",
+                "p7": "",
+                "p8": ""
+            },
+            "ingredients": [
+                "8Shrimp",
+                "2peicesofBread",
+                "1Egg",
+                "Salt",
+                "4TablespoonsSoysauce-dark/light/usual",
+                "2tablespoonsPeanutbutter-orblackbeanpaste",
+                "1tablespoonHoney-ormolasses",
+                "2teaspoonsWhitevinegar",
+                "1/8teaspoonGarlicpowder",
+                "2teaspoonsSesameseedoil",
+                "20dropsChinese-stylehotsauce",
+                "1/8teaspoonBlackpepper"
+            ]
+        }
+    },
+    {
+        "backgroundImage": "images/basics/controls.png",
+        "directions": "Cutthecarrotsandpearsandpouronthemsoyasouceandsalt",
+        "favorite": false,
+        "group": {
+            "backgroundImage": "images/basics/controls.png",
+            "description": "Loremipsumdolorsitamet",
+            "groupImage": "images/basics/controls.png",
+            "key": "Chinese",
+            "rank": "5",
+            "recipesCount": 6,
+            "shortTitle": "UsetheHtmlControls",
+            "title": "Controls"
+        },
+        "ingredients": [
+            "2Carrots",
+            "2Pears",
+            "Soysouce",
+            "Salt"
+        ],
+        "key": 1002,
+        "preptime": "BasichtmlControls",
+        "rating": 5,
+        "shortTitle": "UsetheHtmlControls",
+        "tileImage": "images/basics/controls.png",
+        "title": "HtmlControls"
+    },
+    {
+        "backgroundImage": "images/basics/live.png",
+        "directions": "Mixthemeatwithoneageandsaltandflower.Heatwateraddsaldandbay favorite: false",
+        "group": {
+            "backgroundImage": "images/basics/live.png",
+            "description": "LoremipsumdolorsitametIntegerdapibusleoinmetusvolutpatblandit.Morbifacilisislaoreetmagnaiaculisporta.Donecquisipsumetjustofaucibuslacinia.Vivamusidsapiennecdolorvenenatishendrerit.Aeneansitametpretiumquam.",
+            "groupImage": "images/basics/live.png",
+            "key": "Chinese4",
+            "rank": "6",
+            "recipesCount": 6,
+            "shortTitle": "MakeUIAttractive",
+            "title": "TilesandNotifications"
+        },
+        "ingredients": [
+            "1/2kgofGroundmeat",
+            "Salt",
+            "Paper",
+            "1/2cupofFlower",
+            "Water",
+            "2Bayleaves",
+            "1Egg",
+            "1packageofNuddels"
+        ],
+        "key": 1003,
+        "preptime": "Auto-changetilesin2mins",
+        "rating": 4,
+        "shortTitle": "WideTiles&Logos",
+        "tileImage": "images/basics/live.png",
+        "title": "TilesandNotifications"
+    },
+    {
+        "backgroundImage": "images/basics/tile.png",
+        "directions": "",
+        "favorite": false,
+        "group": {
+            "backgroundImage": "images/basics/tile.png",
+            "description": "",
+            "groupImage": "images/basics/tile.png",
+            "key": "Chinese4",
+            "rank": "7",
+            "recipesCount": 6,
+            "shortTitle": "Tiles&Notifications",
+            "title": "Tiles&Notifications"
+        },
+        "ingredients": [
+            "1/2kgofGroundmeat",
+            "Salt",
+            "Paper",
+            "1/2cupofFlower",
+            "Water",
+            "2Bayleaves",
+            "1Egg",
+            "1packageofNuddels"
+        ],
+        "key": 1003,
+        "preptime": "Liveinaction",
+        "rating": 4,
+        "shortTitle": "LiveTiles",
+        "tileImage": "images/basics/tile.png",
+        "title": "LiveTiles"
+    },
+    {
+        "backgroundImage": "images/basics/toast.png",
+        "directions": "Mixthemeatwithoneageandsaltandflower.Heatwateraddsaldandbayleaves favorite: false",
+        "group": {
+            "backgroundImage": "images/basics/toast.png",
+            "description": ".Aeneansitametpretiumquam.",
+            "groupImage": "images/basics/toast.png",
+            "key": "Chinese4",
+            "rank": "8",
+            "recipesCount": 6,
+            "shortTitle": "UseWindows8Tiles",
+            "title": "Tiles&Notifications"
+        },
+        "ingredients": [
+            "1/2kgofGroundmeat",
+            "Salt",
+            "Paper",
+            "1/2cupofFlower",
+            "Water",
+            "2Bayleaves",
+            "1Egg",
+            "1packageofNuddels"
+        ],
+        "key": 1003,
+        "preptime": "Toast-Remindaboutsomething",
+        "rating": 4,
+        "shortTitle": "ToastNotifications",
+        "tileImage": "images/basics/toast.png",
+        "title": "ToastNotifications"
+    },
+    {
+        "backgroundImage": "images/basics/badge.png",
+        "directions": "",
+        "favorite": false,
+        "group": {
+            "backgroundImage": "images/basics/badge.png",
+            "description": "",
+            "groupImage": "images/basics/badge.png",
+            "key": "Chinese4",
+            "rank": "9",
+            "recipesCount": 6,
+            "shortTitle": "AnimateyourUI",
+            "title": "Animations"
+        },
+        "ingredients": [
+            "1/2kgofGroundmeat",
+            "Salt",
+            "Paper",
+            "1/2cupofFlower",
+            "Water",
+            "2Bayleaves",
+            "1Egg",
+            "1packageofNuddels"
+        ],
+        "key": 1003,
+        "preptime": "AddBadgetoyourtile",
+        "rating": 4,
+        "shortTitle": "Badges",
+        "tileImage": "images/basics/badge.png",
+        "title": "Badges"
+    },
+    {
+        "backgroundImage": "images/basics/animation.png",
+        "directions": "",
+        "favorite": false,
+        "group": {
+            "backgroundImage": "images/basics/animation.png",
+            "description": ".Aeneansitametpretiumquam.",
+            "groupImage": "images/basics/animation.png",
+            "key": "Chinese5",
+            "rank": "10",
+            "recipesCount": 6,
+            "shortTitle": "AnimateyourUI",
+            "title": "Animations"
+        },
+        "ingredients": [
+            "1/2kgofGroundmeat",
+            "Salt",
+            "Paper",
+            "1/2cupofFlower",
+            "Water",
+            "2Bayleaves",
+            "1Egg",
+            "1packageofNuddels"
+        ],
+        "key": 2000,
+        "preptime": "differentanimationtypes",
+        "rating": 4,
+        "shortTitle": "AnimationTypes",
+        "tileImage": "images/basics/animation.png",
+        "title": "AnimationTypes"
+    },
+    {
+        "backgroundImage": "images/basics/dosdonts.jpg",
+        "directions": "",
+        "favorite": false,
+        "group": {
+            "backgroundImage": "images/basics/dosdonts.jpg",
+            "description": ".Aeneansitametpretiumquam.",
+            "groupImage": "images/basics/dosdonts.jpg",
+            "key": "Chinese3",
+            "rank": "11",
+            "recipesCount": 6,
+            "shortTitle": "Knowwhattodo/nottodo",
+            "title": "Do's&Dont's"
+        },
+        "ingredients": [
+            "1or2Greenonions",
+            "2Largeeggs",
+            "1teaspoonSalt",
+            "Peppertotaste",
+            "4tablespoonsOilforstir-fryingorasneeded",
+            "4cupsColdcookedrice",
+            "1-2tablespoonsLightsoysauceorOystersauce"
+        ],
+        "key": 3000,
+        "preptime": "Whattodo/nottodo",
+        "rating": 3,
+        "shortTitle": "LearnDo's&Dont's-WindowsApps",
+        "tileImage": "images/basics/dosdonts.jpg",
+        "title": "Knowwhattodo/nottodo"
+    }
+]
