@@ -54,7 +54,6 @@
     <AppxManifest Include="package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
-    <None Include="Contoso.pfx" />
     <Content Include="css\default.css" />
     <Content Include="data\license.xml">
       <SubType>Designer</SubType>
@@ -137,7 +136,6 @@
     <Content Include="pages\search\search.css" />
     <Content Include="pages\search\search.html" />
     <Content Include="pages\search\search.js" />
-    <None Include="ContosoCookbook_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <SDKReference Include="Microsoft.WinJS.1.0, Version=1.0" />
